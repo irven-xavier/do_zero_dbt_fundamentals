@@ -1,0 +1,264 @@
+{"data":{"log_version":3,"version":"=2.0.0-preview.178"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"019e6fdc-2bf1-72e2-a0ee-d3ed93d48832","level":"info","msg":"Running with dbt-fusion=2.0.0-preview.178","name":"MainReportVersion","pid":3404,"thread":"tokio-rt-worker","ts":"2026-05-28T18:32:40.769881Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"C:\\Users\\Usuario\\.local\\bin\\dbt.exe license info --json --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"019e6fdc-2bf1-72e2-a0ee-d3ed93d48832","level":"debug","msg":"running dbt-fusion with arguments {\"command\":\"license\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false}","name":"MainReportArgs","pid":3404,"thread":"tokio-rt-worker","ts":"2026-05-28T18:32:40.770365Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"019e6fdc-2bf1-72e2-a0ee-d3ed93d48832","level":"debug","msg":"No active cloud project configured, skipping remote license","name":"Generic","pid":3404,"thread":"tokio-rt-worker","ts":"2026-05-28T18:32:40.788610Z"}}
+{"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"019e6fdc-2bf1-72e2-a0ee-d3ed93d48832","level":"info","msg":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","name":"ShowNode","pid":3404,"thread":"tokio-rt-worker","ts":"2026-05-28T18:32:40.795089Z"}}
+{"data":{"completed_at":"2026-05-28T18:32:41.687411Z","elapsed":0.9234659671783447,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"019e6fdc-2bf1-72e2-a0ee-d3ed93d48832","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [923ms]","name":"CommandCompleted","pid":3404,"thread":"tokio-rt-worker","ts":"2026-05-28T18:32:41.693731Z"}}
+==================== 2026-05-28T18:33:20.251392Z | 019e6fdc-c676-7710-8592-950b172e8862 ====================
+18:33:20.253233 [info ]: Installing dbt project and profile setup
+18:33:20.266283 [info ]: Warning A dbt_project.yml already exists in this directory; skipping sample project creation.
+18:33:20.274525 [info ]: Info dbt extension already recommended in .vscode/extensions.json, skipping
+18:33:20.280037 [info ]: Info Setting up your profile...
+18:33:20.281000 [info ]: Loading ~/.dbt/profiles.yml
+18:33:20.282614 [info ]: Info Creating new profile...
+18:33:31.992015 [info ]: No dbt_cloud.yml found - proceeding without cloud pre-population
+18:37:18.063169 [info ]: Success Profile written to C:\Users\Usuario\.dbt\profiles.yml
+18:37:18.067039 [info ]: Validating profile inputs, adapters, and connection
+
+18:37:18.068170 [info ]: dbt-fusion 2.0.0-preview.178
+18:37:18.075753 [info ]: Started loading project
+18:37:18.221819 [info ]: Loading ~/.dbt/profiles.yml
+18:37:18.264037 [info ]: Finished loading project [  0.19s]
+18:37:18.271234 [info ]: Started debugging
+18:37:18.273379 [info ]: Debugging profile: dev
+18:37:18.273781 [info ]: Debugging dbt version: 2.0.0-preview.178
+18:37:18.275323 [info ]: Debugging platform: windows x86_64 (windows)
+18:37:18.278262 [info ]: Debugging adapter type: snowflake (remote)
+18:37:18.329815 [info ]: Debugging dependencies:
+  git: OK
+18:37:18.339004 [info ]: Debugging connection:
+  "account": "VD80491",
+  "user": "iafx95",
+  "database": "analytics",
+  "warehouse": "transforming",
+  "schema": "dbt_irven"
+18:37:25.544108 [info ]: Finished debugging [  7.27s]
+18:37:25.555380 [error]: [AuthenticationFailed (dbt1011)]: dbt was unable to connect to the specified database.
+The following error was returned:
+
+[Snowflake] 261004 (08004): failed to auth for unknown reason. HTTP: 404, URL: https://VD80491.snowflakecomputing.com:443/session/v1/login-request?databaseName=analytics&requestId=f8b5d736-3789-4507-6207-4066b6adb2ac&request_guid=7936c906-7f06-4f70-7851-1406e7dbb818&schemaName=dbt_irven&warehouse=transforming
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/core/connect-data-platform/connection-profiles
+18:37:45.519786 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 error for target 'dev' [4m 25s]
+==================== 2026-05-28T18:38:01.261534Z | 019e6fe1-102a-73c1-89eb-3ef409daee81 ====================
+18:38:01.261864 [info ]: Installing dbt project and profile setup
+18:38:01.269972 [info ]: Warning A dbt_project.yml already exists in this directory; skipping sample project creation.
+18:38:01.288413 [info ]: Info dbt extension already recommended in .vscode/extensions.json, skipping
+18:38:01.289872 [info ]: Info Setting up your profile...
+18:38:01.291999 [info ]: Loading ~/.dbt/profiles.yml
+18:38:01.297161 [info ]: Profile 'default' already exists. You can choose how to proceed.
+18:38:08.757053 [info ]: Info Editing existing profile...
+==================== 2026-05-28T18:39:15.547304Z | 019e6fe2-3257-7db1-b83f-42de07c9d40f ====================
+18:39:15.547640 [info ]: Installing dbt project and profile setup
+18:39:15.553985 [info ]: Warning A dbt_project.yml already exists in this directory; skipping sample project creation.
+18:39:15.556125 [info ]: Info dbt extension already recommended in .vscode/extensions.json, skipping
+18:39:15.558595 [info ]: Info Setting up your profile...
+18:39:15.562048 [info ]: Loading ~/.dbt/profiles.yml
+18:39:15.587108 [info ]: Profile 'default' already exists. You can choose how to proceed.
+18:39:35.822884 [info ]: Info Profile setup cancelled.
+18:39:36.652070 [info ]: Validating profile inputs, adapters, and connection
+
+18:39:37.298558 [info ]: dbt-fusion 2.0.0-preview.178
+18:39:38.139884 [info ]: Started loading project
+18:39:38.331602 [info ]: Loading ~/.dbt/profiles.yml
+18:39:38.605820 [info ]: Finished loading project [  0.47s]
+18:39:38.621731 [info ]: Started debugging
+18:39:38.630414 [info ]: Debugging profile: dev
+18:39:38.644466 [info ]: Debugging dbt version: 2.0.0-preview.178
+18:39:38.654311 [info ]: Debugging platform: windows x86_64 (windows)
+18:39:38.658553 [info ]: Debugging adapter type: snowflake (remote)
+18:39:38.820254 [info ]: Debugging dependencies:
+  git: OK
+18:39:38.875478 [info ]: Debugging connection:
+  "account": "VD80491",
+  "user": "iafx95",
+  "database": "analytics",
+  "warehouse": "transforming",
+  "schema": "dbt_irven"
+18:39:50.985314 [info ]: Finished debugging [ 12.36s]
+18:39:51.058390 [error]: [AuthenticationFailed (dbt1011)]: dbt was unable to connect to the specified database.
+The following error was returned:
+
+[Snowflake] 261004 (08004): failed to auth for unknown reason. HTTP: 404, URL: https://VD80491.snowflakecomputing.com:443/session/v1/login-request?databaseName=analytics&requestId=70cc38a8-a9dd-43b4-6295-0ffbdf3c2a2a&request_guid=250b99f3-8671-4eac-4af0-15e9485df588&schemaName=dbt_irven&warehouse=transforming
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/core/connect-data-platform/connection-profiles
+18:39:54.118176 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 error for target 'dev' [38.6s]
+==================== 2026-05-28T18:44:20.147812Z | 019e6fe6-d830-7c01-ad89-bd5f2492d39d ====================
+18:44:20.148130 [info ]: Installing dbt project and profile setup
+18:44:20.153466 [info ]: Warning A dbt_project.yml already exists in this directory; skipping sample project creation.
+18:44:20.154842 [info ]: Info dbt extension already recommended in .vscode/extensions.json, skipping
+18:44:20.156377 [info ]: Info Setting up your profile...
+18:44:20.157563 [info ]: Loading ~/.dbt/profiles.yml
+18:44:20.177649 [info ]: Profile 'default' already exists. You can choose how to proceed.
+18:44:23.654872 [info ]: Info Profile setup cancelled.
+18:44:23.655773 [info ]: Validating profile inputs, adapters, and connection
+
+18:44:23.658106 [info ]: dbt-fusion 2.0.0-preview.178
+18:44:23.660248 [info ]: Started loading project
+18:44:23.662346 [info ]: Loading ~/.dbt/profiles.yml
+18:44:23.664530 [info ]: Finished loading project [  0.00s]
+18:44:23.667388 [info ]: Started debugging
+18:44:23.669244 [info ]: Debugging profile: dev
+18:44:23.669583 [info ]: Debugging dbt version: 2.0.0-preview.178
+18:44:23.670092 [info ]: Debugging platform: windows x86_64 (windows)
+18:44:23.670464 [info ]: Debugging adapter type: snowflake (remote)
+18:44:23.718819 [info ]: Debugging dependencies:
+  git: OK
+18:44:23.719680 [info ]: Debugging connection:
+  "account": "UMQLUPS-VD80491",
+  "user": "iafx95",
+  "database": "analytics",
+  "warehouse": "transforming",
+  "schema": "dbt_irven"
+18:44:27.423574 [debug]: Query executed on node unknown:
+select 1 as id
+18:44:27.440020 [info ]: Debugging connection test: OK
+18:44:27.443699 [info ]: Debugged All checks passed!
+18:44:27.446352 [info ]: Finished debugging [  3.78s]
+18:44:28.291892 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' successfully for target 'dev' [8.1s]
+==================== 2026-05-28T18:45:24.125079Z | 019e6fe7-d217-7c00-a6ea-cdbf4f6205c2 ====================
+18:45:24.125346 [info ]: dbt-fusion 2.0.0-preview.178
+18:45:24.126644 [info ]: Started loading project
+18:45:24.134902 [info ]: Loading ~/.dbt/profiles.yml
+18:45:24.161066 [debug]:    Started loading packages
+18:45:24.182500 [debug]:     Loaded [  0.02s] packages
+18:45:24.201330 [info ]: Finished loading project [  0.07s]
+18:45:24.209138 [info ]: Started parsing
+18:45:24.452152 [debug]: Finished parsing models\customers.sql [  0.05s]
+18:45:24.501800 [info ]: Finished parsing [  0.29s]
+18:45:24.516774 [info ]: Started scheduling
+18:45:24.526955 [info ]: Finished scheduling [  0.01s]
+18:45:24.651094 [info ]: Started building task graph
+18:45:24.664315 [info ]: Finished building task graph [  0.01s]
+18:45:24.686858 [info ]: Started rendering (1 nodes)
+18:45:24.688483 [info ]: Started model dbt_irven.customers
+18:45:24.690583 [debug]: Started rendering model dbt_irven.customers
+18:45:24.714121 [debug]: Compiled SQL for node model.jaffle_shop.customers at target\compiled\jaffle_shop\models\customers.sql
+18:45:24.720818 [debug]: Finished rendering [  0.03s] model dbt_irven.customers [success]
+18:45:24.722560 [info ]: Finished rendering [  0.04s] (1 nodes, 0 skipped, 0 errors)
+18:45:24.724816 [info ]: Started analyzing (1 nodes)
+18:45:24.725154 [debug]: Started analyzing model dbt_irven.customers
+18:45:24.836162 [debug]: Finished analyzing [  0.11s] model dbt_irven.customers [success]
+18:45:24.836752 [info ]: Finished analyzing [  0.11s] (1 nodes, 0 skipped, 0 errors)
+18:45:24.838423 [info ]:  Succeeded [  0.14s] model dbt_irven.customers (view)
+18:45:25.318816 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [1.2s]
+Processed: 1 model
+Summary: 1 total | 1 success
+==================== 2026-05-28T18:46:42.952181Z | 019e6fe9-0604-7b82-9fd1-009e97c658a8 ====================
+18:46:42.952571 [info ]: dbt-fusion 2.0.0-preview.178
+18:46:42.954360 [info ]: Started loading project
+18:46:42.962014 [info ]: Loading ~/.dbt/profiles.yml
+18:46:42.979671 [debug]:    Started loading packages
+18:46:42.989313 [debug]:     Loaded [  0.01s] packages
+18:46:42.990958 [info ]: Finished loading project [  0.04s]
+18:46:42.991890 [info ]: Started parsing
+18:46:43.063026 [debug]: Finished parsing models\customers.sql [  0.00s]
+18:46:43.070976 [info ]: Finished parsing [  0.08s]
+18:46:43.072781 [info ]: Started scheduling
+18:46:43.074475 [info ]: Finished scheduling [  0.00s]
+18:46:43.088272 [info ]: Started building task graph
+18:46:43.094867 [info ]: Finished building task graph [  0.01s]
+18:46:45.540586 [debug]: Query executed on node unknown:
+show terse schemas in database analytics
+    limit 10000
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "default", "target_name": "dev"} */
+18:46:45.691568 [debug]: Query executed on node unknown:
+create schema if not exists analytics.dbt_irven
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "default", "target_name": "dev"} */
+18:46:45.695188 [info ]: Started rendering (1 nodes)
+18:46:45.695839 [info ]: Started model dbt_irven.customers
+18:46:45.695962 [debug]: Started rendering model dbt_irven.customers
+18:46:45.700449 [debug]: Compiled SQL for node model.jaffle_shop.customers at target\compiled\jaffle_shop\models\customers.sql
+18:46:45.700911 [debug]: Finished rendering [  0.00s] model dbt_irven.customers [success]
+18:46:45.702230 [info ]: Finished rendering [  0.01s] (1 nodes, 0 skipped, 0 errors)
+18:46:45.703395 [info ]: Started analyzing (1 nodes)
+18:46:45.703858 [debug]: Started analyzing model dbt_irven.customers
+18:46:45.753154 [debug]: Finished analyzing [  0.05s] model dbt_irven.customers [success]
+18:46:45.754317 [info ]: Finished analyzing [  0.05s] (1 nodes, 0 skipped, 0 errors)
+18:46:45.755916 [info ]: Started running (1 nodes)
+18:46:45.757038 [info ]: Started running model dbt_irven.customers
+18:46:45.986209 [debug]: Query executed on node model.jaffle_shop.customers:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."DBT_IRVEN" LIMIT 10000
+18:46:46.007305 [debug]: Writing runtime sql for node "model.jaffle_shop.customers"
+18:46:46.354678 [debug]: Query executed on node model.jaffle_shop.customers:
+create or replace   view analytics.dbt_irven.customers
+  
+  
+  
+  
+  as (
+    with customers as (
+
+    select
+        id as customer_id,
+        first_name,
+        last_name
+
+    from raw.jaffle_shop.customers
+
+),
+
+orders as (
+
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+
+    from raw.jaffle_shop.orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+  )
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.customers", "profile_name": "default", "target_name": "dev"} */
+18:46:46.379838 [info ]: Finished running [  0.62s] model dbt_irven.customers [success]
+18:46:46.380889 [info ]: Finished running [  0.62s] (1 nodes, 0 skipped, 0 errors)
+18:46:46.382424 [info ]:  Succeeded [  0.68s] model dbt_irven.customers (view)
+18:46:46.619169 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [3.7s]
+Processed: 1 model
+Summary: 1 total | 1 success
