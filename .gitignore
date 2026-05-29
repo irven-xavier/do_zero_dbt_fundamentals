@@ -9,3 +9,6 @@ wheels/
 # Virtual environments
 .venv
 dbt_internal_packages/
+target/
+dbt_modules/
+logs/
